@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .form-group { 
+   content:"*";
+   color:red;
+}
+    </style>
+<meta charset="ISO-8859-1">
+<title></title>
+    <link rel="stylesheet" href="mystyle.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+    
+
+<body>
+    <div class="container">
+    &nbsp;&nbsp;&nbsp;&nbsp;<h3>Application form for submitting proposals for conducting various events at VCE</h3>
+    <!-- Default form register -->
+    </div>
+    <hr>
+    <br>
+    <div class="container">
+        <p>Faculty/staff members willing to conduct National and international conferences/symposia ,short-term courses,hackathons and any other events as listed below should fill this application form and submit for administrative approval. All logistical and promotional support will be offered by the college – including catering services, transportation, brochure design, application forms, feedback forms, fee collection, laboratories, classrooms, seminar hall, stationery, social media promotions, photography, administrative assistants, projectors, audio-visual-support, certificates/awards, expenditure & tax management etc. </p>
+    </div>   
+    <hr>
+    
+   
+    <div class="container">
+         <h3>Types Of Evnets</h3>
+    <p>Faculty Development Program(FDP), Staff Development Program(SDP), Management Development Program(MDP), Short term Training Program(STTP), National/International Seminar/Conference/Symposia, Hands on Training, value added programs.</p>
+    </div>
+    <hr>
+   <div class="container">
+        <center>
+    
+<form class="text-center border border-light p-5" name="form1" onsubmit="return validateForm()" action="try.php" method="post">
+
+    
+    <h4>Personal Details</h4>
+    
+
+    <div class="form-row mb-4">
+        <div class="col">
+            <!-- First name -->
+            <label>First Name</label>
+            <input type="text" id="defaultRegisterFormFirstName" class="form-control" placeholder="First name" name="fname" style="padding: 15" required>
+        </div>
+        <div class="col">
+            <!-- Last name -->
+            <div class="form-group required">
+            <label>Last Name</label>
+            <input type="text" id="defaultRegisterFormFirstName" class="form-control" placeholder="Last name" name="lname" required>
+        </div>
+        </div>
+    </div>
+    <div class="form-group">
+    <label for="exampleFormControlSelect1">Designation</label>
+    <select class="form-control" id="exampleFormControlSelect1" name="desig" required>
+        <option>---</option>
+      <option>Professor</option>
+      <option>Associat Professor</option>
+      <option>Assistant Professor</option>
+      <option>4</option>
+      <option>5</option>
+    </select>
+    </div>
+    <div class="form-group">
+    <label for="exampleFormControlSelect1">Department *</label>
+    <select class="form-control" id="exampleFormControlSelect1" name="dept" required>
+     <option>---</option>
+      <option>CSE</option>
+      <option>ECE</option>
+       <option>EEE</option>
+      <option>MECH</option>
+      <option>CIVIL</option>
+      <option>IT</option>
+    
+    </select>
+        
+    </div>
+    <label for="exampleFormControlSelect1">Please Provide detials of other team Members</label>
+    <table class="table">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">SLNO</th>
+      <th scope="col">Name</th>
+      <th scope="col">Designation</th>
+      <th scope="col">Email</th>
+      <th scope="col">Department</th>
+      <th scope="col">Role In the event</th>
+      
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><Input type="text" name="n1"></td>
+      <td><Input type="text" name="n2"></td>
+      <td><Input type="text" name="n3"></td>
+      <td><Input type="text" name="n4"></td>
+      <td><Input type="text" name="n5"></td>
+      <td><Input type="text" name="n6"></td>
+    </tr>
+    <tr>
+      <td><Input type="text" name="n7"></td>
+      <td><Input type="text" name="n8"></td>
+      <td><Input type="text" name="n9"></td>
+      <td><Input type="text" name="n10"></td>
+      <td><Input type="text" name="n11"></td>
+      <td><Input type="text" name="n12"></td>
+    </tr>
+    
+  </tbody>
+</table>
+
+
+    
+    
+    
+
+    
+
+    
+    
+
+    <!-- Newsletter -->
+    <div class="custom-control custom-checkbox">
+        <input type="checkbox" class="custom-control-input" id="defaultRegisterFormNewsletter">
+        <label class="custom-control-label" for="defaultRegisterFormNewsletter">Subscribe to our newsletter</label>
+    </div>
+
+    <!-- Sign up button -->
+    <button class="btn btn-outline-primary" type="submit">NEXT</button>
+
+    <!-- Social register -->
+   
+    
+
+    
+
+</form>
+        </center>
+    </div>
+        
+    
+<!-- Default form register -->
+    <script>
+    function validateForm() {
+  var x = document.form1.desig.value;
+  var y=  document.form1.dept.value
+  if (x =="---") {
+    alert("Designation must be choosen");
+    return false;
+  }
+  else if(y=="---")
+      {
+          alert("Department must be choosen");
+          return false;
+      }
+} 
+    </script>
+        
+    
+    
+   
+    
+      
+
+        
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</body>
+</html>
